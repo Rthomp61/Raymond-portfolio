@@ -61,7 +61,7 @@ export function Navbar() {
           <div className="flex items-center">
             <a href="#" className="flex items-center">
               <h1 className="text-xl font-bold font-space tracking-tight">
-                <span className="text-primary dark:text-black">AI PORTFOLIO</span>
+                <span className="gradient-text">AI PORTFOLIO</span>
               </h1>
             </a>
           </div>
