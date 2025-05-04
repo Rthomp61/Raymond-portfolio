@@ -62,7 +62,7 @@ export function Navbar() {
           <div className="flex items-center">
             <a href="#" className="flex items-center">
               <h1 className="text-xl font-bold font-space tracking-tight">
-                <span className="gradient-text">AI PORTFOLIO</span>
+                <span className="text-primary dark:text-white">AI PORTFOLIO</span>
               </h1>
             </a>
           </div>
@@ -79,8 +79,8 @@ export function Navbar() {
                 className={cn(
                   "inline-flex items-center px-1 py-1 text-sm font-medium border-b-2 transition-colors duration-200",
                   activeSection === link.href
-                    ? "border-primary text-primary"
-                    : "border-transparent hover:border-primary"
+                    ? "border-primary text-primary dark:text-primary"
+                    : "border-transparent hover:border-primary text-gray-700 dark:text-gray-200"
                 )}
               >
                 {link.name}
@@ -97,7 +97,7 @@ export function Navbar() {
               aria-expanded={mobileMenuOpen}
               aria-label="Toggle mobile menu"
             >
-              <i className="ri-menu-line text-xl"></i>
+              <i className="ri-menu-line text-xl text-gray-700 dark:text-gray-200"></i>
             </button>
           </div>
         </div>
@@ -120,8 +120,8 @@ export function Navbar() {
               className={cn(
                 "block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200",
                 activeSection === link.href
-                  ? "bg-gray-100 dark:bg-gray-800 text-primary"
-                  : "hover:bg-gray-100 dark:hover:bg-gray-800"
+                  ? "bg-gray-100 dark:bg-gray-800 text-primary dark:text-primary"
+                  : "hover:bg-gray-100 dark:hover:bg-gray-800 text-gray-700 dark:text-gray-200"
               )}
             >
               {link.name}
