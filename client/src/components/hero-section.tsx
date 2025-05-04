@@ -1,9 +1,13 @@
 import { AnimatedText } from "@/components/ui/animated-text";
+import { ThemeToggle } from "@/components/theme-toggle";
 import { motion } from "framer-motion";
 
 export function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center">
+      <div className="absolute top-20 md:top-24 right-6 md:right-12 z-40">
+        <ThemeToggle className="scale-125" />
+      </div>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
           <motion.div 

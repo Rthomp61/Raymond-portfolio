@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { ThemeToggle } from "@/components/theme-toggle";
 import { cn } from "@/lib/utils";
 import { smoothScrollTo } from "@/lib/utils";
 
@@ -54,7 +53,7 @@ export function Navbar() {
   return (
     <nav className={cn(
       "fixed top-0 w-full z-50 transition-all duration-300",
-      scrolled ? "bg-white/90 dark:bg-slate/90 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800" 
+      scrolled ? "bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800" 
                : "bg-transparent"
     )}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -62,7 +61,7 @@ export function Navbar() {
           <div className="flex items-center">
             <a href="#" className="flex items-center">
               <h1 className="text-xl font-bold font-space tracking-tight">
-                <span className="text-primary dark:text-white">AI PORTFOLIO</span>
+                <span className="text-primary dark:text-black">AI PORTFOLIO</span>
               </h1>
             </a>
           </div>
@@ -86,8 +85,6 @@ export function Navbar() {
                 {link.name}
               </a>
             ))}
-            
-            <ThemeToggle />
           </div>
           
           <div className="flex md:hidden items-center">
@@ -105,7 +102,7 @@ export function Navbar() {
       
       {/* Mobile menu */}
       <div className={cn(
-        "md:hidden bg-white dark:bg-slate border-b border-gray-200 dark:border-gray-800 transition-all duration-300",
+        "md:hidden bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800 transition-all duration-300",
         mobileMenuOpen ? "block" : "hidden"
       )}>
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
@@ -127,10 +124,6 @@ export function Navbar() {
               {link.name}
             </a>
           ))}
-          
-          <div className="px-3 py-2">
-            <ThemeToggle variant="button" showLabel={true} />
-          </div>
         </div>
       </div>
     </nav>
