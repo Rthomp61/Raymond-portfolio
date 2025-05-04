@@ -1,0 +1,288 @@
+Portfolio Website for AI native builder
+
+
+ Header: AI PORTFOLIO 
+Ray Thompson  "I'm a native AI problem solver and I build human-first digital products."
+Your portfolio should reflect sharp technical skills and a strong user-centered mindset — you solve real problems with modern AI tools and design with empathy.  "Blueprint for Impact"
+Tagline: Thoughtful. Structured. Future-facing.
+* Palette: #1A1A1A (slate), #FFFFFF, #00C2FF (vibrant cyan)
+* Fonts: Space Grotesk (headline) + IBM Plex Sans (body)
+* Hero Headline: "Designing tomorrow’s products — today." Blending AI with empathy to deliver results.
+* Layout Sketch:
+    1. Hero (headline + animated tagline swapper)
+    2. Bio (w/ quick stats: tools, experience, education)
+    3. Projects (carousel slider with preview GIFs)
+    4. Tech Stack
+    5. Contact
+* Signature Interaction: Animated headline swappable phrases (e.g., “AI tools”, “human needs”, “product impact”)
+  root/
+├─ index.html (or App.jsx if using React)
+├─ /assets/
+│   ├─ profile.jpg
+│   ├─ project1-thumbnail.png
+│   ├─ favicon.ico
+├─ /projects/
+│   ├─ mars/
+│   │   └─ index.md
+│   ├─ recipe-scanner/
+│   │   └─ index.md
+│   └─ ai-workflows/
+│       └─ index.md
+├─ /styles/
+│   └─ tailwind.config.js or main.css
+├─ README.md
+    <!-- TODO: Replace with your name and details -->
+<title>Raymond – AI Native Problem Solver</title>
+<meta name="description" content="I design and build human-first AI solutions.">
+
+
+# MARS – Medication Automation Reminder System
+
+**Problem:** Managing medications is complex for seniors, caregivers, and even pets.  
+**Solution:** MARS offers voice-input scheduling, multi-profile support, and smart reminders.  
+**Impact:** Reduced missed doses by 50% in pilot tests.  
+> Stack: React Native, Firebase, Voice Commands, Twilio
+
+![screenshot](../../assets/project1-thumbnail.png)
+
+
+# Recipe Scanner App – Gourmand
+
+**Problem:** Recipes on paper or screenshots are unorganized and hard to search.  
+**Solution:** AI image-to-text extraction with food-type tagging and time-based filters.  
+**Impact:** Digitized over 500 family recipes with 95% accuracy.  
+> Stack: Tesseract.js, React, Express
+
+
+
+# AI Workflow Automation – Inbox to Action
+
+**Problem:** High-volume digital workflows waste time and create bottlenecks.  
+**Solution:** AI orchestrator auto-triages Slack, Gmail, and LinkedIn messages into a single dashboard.  
+**Impact:** Saved 5+ hours/week across test users.  
+> Stack: OpenAI API, Node.js, Zapier
+
+
+
+# Portfolio – Raymond
+
+A modern, responsive portfolio to showcase AI-native work and human-centered products.
+
+## Tech Stack
+- React / Vite
+- Tailwind CSS
+- Deployed via GitHub Pages
+
+## To Do
+- [ ] Replace placeholder project content
+- [ ] Add real images and optimize for web
+
+
+
+{
+  "name": "raymond-portfolio",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.0",
+    "tailwindcss": "^3.3.0",
+    "vite": "^5.0.0"
+  }
+}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Raymond – AI Native Builder</title>
+    <meta name="description" content="Portfolio of Raymond, an AI-native problem solver and digital product builder." />
+    <link rel="icon" href="/assets/favicon.ico" />
+  </head>
+  <body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-white transition-colors">
+    <div id="root"></div>
+    <script type="module" src="/main.jsx"></script>
+  </body>
+</html>
+
+
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
+import './styles/tailwind.css';
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+
+
+
+function App() {
+  return (
+    <div className="p-8 max-w-4xl mx-auto font-sans">
+      <header className="mb-10">
+        <h1 className="text-4xl font-bold">👋 Hi, I'm Raymond</h1>
+        <p className="mt-2 text-lg text-gray-600 dark:text-gray-300">
+          AI-native problem solver building human-first digital products.
+        </p>
+      </header>
+
+      {/* TODO: Add components for Projects, About, Skills, Contact */}
+
+      <footer className="mt-20 text-sm text-center text-gray-400">
+        © {new Date().getFullYear()} Raymond. Built with React + Tailwind.
+      </footer>
+    </div>
+  );
+}
+
+export default App;
+
+
+
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,jsx}'],
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        primary: '#00C2FF',
+      },
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+      },
+    },
+  },
+  plugins: [],
+};
+
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* TODO: Add custom styles if needed */
+
+
+
+
+📱 7. Mobile & Accessibility Meta
+* ✅ Responsive meta-tag included in index.html
+* ✅ Uses semantic markup
+* ✅ Alt-text and ARIA roles → add in final content polish
+                      Landing Page: 
+
+TABS AT THE TOP WITH THE BELOW SUBJECTS 1-5     Tabs at the top of the page for each category below:  1: Top Projects
+Showcase 1–3 standout builds (e.g., MARS app, Recipe Scanner, Workflow Automation). Include context: problem → solution → impact.  2:  Resume or Work History Link to or embed PDF, summarize experience visually.
+
+
+3:  Skills & Tech Stack Display logos/tags (React, Firebase, Python, LLMs, RAG, etc.).
+
+
+
+4: About / Bio Section Share a personal narrative — your transition, mission, and what drives you.
+
+
+
+5: Metrics / Press / Testimonials
+Any KPIs, AI school recognitions, or user quotes you can include.  ABOVE THE ROTATING SCREEN SHOTS I WOULD LIKE THERE TO BE AN AREA TO ADD MY LINKED IN PROFILE URL
+AN AREA TO ADD MY GITHUB URL
+
+
+
+On the landing page I would like it to include rotating screenshots of projects I have worked on. 
+ An overlay will popup and you can upload or delete existing photos in the carousel for the Landing page. 
+
+ FOOTER: TOP 
+Ray Thompson Est: 2025
+
+
+
+
+
+   TOP PROJECTS PAGE:
+
+I WOULD LIKE SPECIFIC SECTIONS FOR EACH PROJECT:
+
+CONTINUOUS FLOW WHERE YOU CAN SCROLL DOWN THE PAGE.
+
+IN EACH SECTION FOR EACH PROJECT YOU SHOULD BE ABLE TO ADD A TITLE:
+
+YOU SHOULD BE ABLE TO DRAG IN PHOTOS AS WELL OR ADD PDFS.
+
+
+
+RESUME AND WORK HISTORY PAGE:
+
+YOU SHOULD BE ABLE TO DRAG IN PHOTOS OR PDFS INTO THIS SECTION
+
+THE FIRST SECTION WOULD BE YOUR RESUME PRESENTED DOMINANTLY ON THE PAGE.
+
+ANYTHING ELSE ADDED SHOULD DE DISPLAYED BELOW.
+
+
+
+
+SKILLS & TECH STACK PAGE:
+
+YOU SHOULD BE ABLE TO DRAG IN PHOTOS OR PDFS OR ANY FILES FROM GITHUB, REPLIT OR YOUR COMPUTERS AS NEEDED 
+
+
+SKILLS SHOULD BE SHOWN AT THE TOP AND TECH STACKS BELOW THAT AND ANY OTHER PHOTOS OR PDFS
+
+
+
+
+
+ABOUT/ BIO SECTION PAGE:
+
+BIGGEST SECTION (A LITTLE BACKGROUND STORY OF YOURSELF)
+
+SHOULD BE ABLE TO DRAG IN PHOTOS OR PDFS OR FILES FROM YOUR COMPUTER.
+
+
+
+
+
+METRICS/PRESS/TESTIMONIALS PAGE
+
+BIGGEST SECTION HERE WOULD BE PRESS
+
+THEN METRICS
+
+THEN TESTIMONIALS
+
+SHOULD BE ABLE TO DRAG IN PHOTOS, PDFS OR FILES FROM YOUR COMPUTER.
+
+
+
+🎨 Design & UX Style: Minimalist Tech-Modern
+* Vibe: Clean, efficient, modern
+* Palette: 🖤🤍💙 neutrals + 1 accent (electric blue or cyan)
+* Fonts: Sans-serif or monospaced (e.g., Inter, Fira Code)
+* Features: Dark/light toggle, smooth scroll, responsive layout
+* Motion: Subtle transitions, hover reveals
+
+
+
+
+
+
+       
