@@ -22,7 +22,7 @@ const projects: Project[] = [
     solution: "MARS offers voice-input scheduling, multi-profile support, and smart reminders.",
     impact: "Reduced missed doses by 50% in pilot tests.",
     techStack: ["React Native", "Firebase", "Voice Commands", "Twilio"],
-    imageUrl: "https://images.unsplash.com/photo-1605296867304-46d5465a13f1?q=80&w=2070&auto=format&fit=crop"
+    imageUrl: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?q=80&w=2830&auto=format&fit=crop"
   },
   {
     id: 2,
