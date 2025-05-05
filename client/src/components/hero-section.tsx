@@ -1,6 +1,7 @@
 import { AnimatedText } from "@/components/ui/animated-text";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { motion } from "framer-motion";
+import { ProjectsSection } from "@/components/projects-section";
 
 export function HeroSection() {
   return (
@@ -58,6 +59,21 @@ export function HeroSection() {
                 <span className="h-2 w-2 rounded-full bg-green-400 mr-2"></span>
                 <span>Available for projects</span>
               </span>
+            </div>
+          </motion.div>
+        </div>
+        
+        <div className="mt-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+          >
+            <h2 className="text-3xl font-bold font-space mb-2">Top Projects</h2>
+            <p className="text-gray-600 dark:text-gray-400 mb-8">Showcasing my work solving real-world problems with AI.</p>
+            
+            <div className="bg-gray-50 dark:bg-gray-900 rounded-xl p-6">
+              <ProjectsSection />
             </div>
           </motion.div>
         </div>

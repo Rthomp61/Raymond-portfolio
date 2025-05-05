@@ -13,7 +13,6 @@ export function Portfolio() {
       
       <main>
         <HeroSection />
-        <ProjectsSection />
         <ResumeSection />
         <AboutSection />
         <ContactSection />

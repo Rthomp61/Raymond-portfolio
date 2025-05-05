@@ -46,21 +46,9 @@ const projects: Project[] = [
 
 export function ProjectsSection() {
   return (
-    <section id="projects" className="py-20 bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.6 }}
-        >
-          <h2 className="text-3xl font-bold font-space mb-2">Top Projects</h2>
-          <p className="text-gray-600 dark:text-gray-400 mb-12">Showcasing my work solving real-world problems with AI.</p>
-        </motion.div>
-        
-        <ProjectCarousel projects={projects} />
-      </div>
-    </section>
+    <div id="projects">
+      <ProjectCarousel projects={projects} />
+    </div>
   );
 }
 
