@@ -11,7 +11,6 @@ const navLinks: NavLink[] = [
   { name: "Projects", href: "projects" },
   { name: "Resume", href: "resume" },
   { name: "About", href: "about" },
-  { name: "Metrics", href: "metrics" },
 ];
 
 export function Navbar() {
