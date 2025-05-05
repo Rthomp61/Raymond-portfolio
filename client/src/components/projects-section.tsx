@@ -22,7 +22,7 @@ const projects: Project[] = [
     solution: "MARS offers voice-input scheduling, multi-profile support, and smart reminders.",
     impact: "Reduced missed doses by 50% in pilot tests.",
     techStack: ["React Native", "Firebase", "Voice Commands", "Twilio"],
-    imageUrl: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=2940&auto=format&fit=crop"
+    imageUrl: "https://images.unsplash.com/photo-1605296867304-46d5465a13f1?q=80&w=2070&auto=format&fit=crop"
   },
   {
     id: 2,
@@ -31,7 +31,7 @@ const projects: Project[] = [
     solution: "AI image-to-text extraction with food-type tagging and time-based filters.",
     impact: "Digitized over 500 family recipes with 95% accuracy.",
     techStack: ["Tesseract.js", "React", "Express"],
-    imageUrl: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=2940&auto=format&fit=crop"
+    imageUrl: "https://images.unsplash.com/photo-1507048331197-7d4ac70811cf?q=80&w=2874&auto=format&fit=crop"
   },
   {
     id: 3,
