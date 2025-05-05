@@ -9,9 +9,9 @@ export function HeroSection() {
         <ThemeToggle className="scale-125" />
       </div>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+        <div className="grid grid-cols-1 items-center">
           <motion.div 
-            className="md:col-span-7 flex flex-col space-y-8"
+            className="flex flex-col space-y-8"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -60,39 +60,7 @@ export function HeroSection() {
               </span>
             </div>
           </motion.div>
-          
-          <motion.div 
-            className="md:col-span-5"
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-          >
-            <div className="bg-gray-100 dark:bg-gray-800 rounded-2xl overflow-hidden shadow-xl transform transition-all hover:scale-[1.02] duration-300">
-              <img 
-                src="https://images.unsplash.com/photo-1673468196076-dd0d11cac2e8?q=80&w=3270&auto=format&fit=crop" 
-                alt="Profile" 
-                className="w-full h-64 md:h-96 object-cover"
-              />
-            </div>
-          </motion.div>
         </div>
-      </div>
-      
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex items-center justify-center">
-        <motion.a 
-          href="#projects"
-          onClick={(e) => {
-            e.preventDefault();
-            document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
-          }}
-          className="animate-bounce p-2 bg-white dark:bg-gray-800 rounded-full shadow-md hover:shadow-lg transition-shadow duration-300"
-          whileHover={{ scale: 1.1 }}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1, duration: 0.5 }}
-        >
-          <i className="ri-arrow-down-s-line text-xl text-primary"></i>
-        </motion.a>
       </div>
     </section>
   );
