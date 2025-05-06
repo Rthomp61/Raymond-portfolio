@@ -35,6 +35,15 @@ const projects: Project[] = [
   },
   {
     id: 3,
+    title: "EMS – Expense Management System",
+    problem: "Tracking expenses is tedious and often gets neglected, especially for busy users.",
+    solution: "EMS allows both manual and voice-command expense input with a clean, modern interface and smart scheduling.",
+    impact: "Helped early testers track spending 2x faster and improved financial awareness.",
+    techStack: ["React", "TypeScript", "TailwindCSS", "Web Speech API", "LocalStorage"],
+    imageUrl: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=2942&auto=format&fit=crop"
+  },
+  {
+    id: 4,
     title: "AI Workflow Automation – Inbox to Action",
     problem: "High-volume digital workflows waste time and create bottlenecks.",
     solution: "AI orchestrator auto-triages Slack, Gmail, and LinkedIn messages into a single dashboard.",
