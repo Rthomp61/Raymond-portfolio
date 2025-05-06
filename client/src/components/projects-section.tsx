@@ -41,15 +41,6 @@ const projects: Project[] = [
     impact: "Helped early testers track spending 2x faster and improved financial awareness.",
     techStack: ["React", "TypeScript", "TailwindCSS", "Web Speech API", "LocalStorage"],
     imageUrl: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=2942&auto=format&fit=crop"
-  },
-  {
-    id: 4,
-    title: "AI Workflow Automation – Inbox to Action",
-    problem: "High-volume digital workflows waste time and create bottlenecks.",
-    solution: "AI orchestrator auto-triages Slack, Gmail, and LinkedIn messages into a single dashboard.",
-    impact: "Saved 5+ hours/week across test users.",
-    techStack: ["OpenAI API", "Node.js", "Zapier"],
-    imageUrl: "https://images.unsplash.com/photo-1517433367423-c7e5b0f35086?q=80&w=2880&auto=format&fit=crop"
   }
 ];
 
