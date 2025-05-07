@@ -19,6 +19,8 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      # Important: Before deploying, update vite.config.ts with:
+      # base: '/your-repo-name/',  (Replace with your actual repo name)
       - name: Build
         run: npm run build
 
