@@ -28,3 +28,6 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: dist
+          # The following options can help with permission issues:
+          # token: ${{ secrets.GITHUB_TOKEN }} # Use this if you enabled read/write permissions
+          # repository-name: Rthomp61/Raymond-portfolio # Optional: specify the repo explicitly
